@@ -1,3 +1,13 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -272,14 +282,18 @@ body {
 
 /* Container */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-
-  border: solid 1px tomato;
+  outline: solid 1px tomato;
 }
 
 .header-container {
@@ -309,4 +323,67 @@ body {
 }
 .contacts {
   display: flex;
+}
+
+.main {
+
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+}
+
+.main-head {
+  text-align: center;
+  margin-bottom: 30px ;
+}
+.main-button {
+  margin: auto;
+  padding: 10px 32px;
+}
+
+.hero-list{
+  display: flex;
+
+
+}
+.hero-item{
+  display: block;
+  width: 270px;
+  margin-right: 30px;
+  
+ }
+  
+.hero-title{
+  margin-bottom: 10px;
+
+}
+.about-head{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.about-list{
+  display: flex
+  
+}
+.about-item:not(:last-child)
+{
+  margin-right:30px ;
+   
+}
+
+.masters-head{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.masters-list{
+  display: flex;
+  padding-bottom: 154px;
+}
+.masters-item:not(:last-child){
+  margin-right: 30px;
+  width: 270px;
+}
+.masters-name-title{
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
